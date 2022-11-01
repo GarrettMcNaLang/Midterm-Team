@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
         // 4 - Movement per direction
         movement = new Vector2(
           speed.x * inputX,
-          speed.y * inputY);
+          rigidbodyComponent.velocity.y);
 
     }
 
