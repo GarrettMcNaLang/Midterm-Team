@@ -7,21 +7,21 @@ using UnityEngine;
 /// </summary>
 public class MoveScript : MonoBehaviour
 {
-<<<<<<< HEAD
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag != "Player")
         {
-            //Destroy the other object
-            Destroy(collision.gameObject);
+            return;
         }
-=======
+        //Destroy the other object
+        Destroy(collision.gameObject);
+    }
     // 1 - Designer variables
 
-    /// <summary>
-    /// Object speed
-    /// </summary>
+        /// <summary>
+        /// Object speed
+        /// </summary>
     public Vector2 speed = new Vector2(10, 10);
 
     /// <summary>
@@ -46,6 +46,5 @@ public class MoveScript : MonoBehaviour
 
         // Apply movement to the rigidbody
         rigidbodyComponent.velocity = movement;
->>>>>>> a55f29c5fca0b08c0bb1204d9fc62d18eeb6f16c
     }
 }
