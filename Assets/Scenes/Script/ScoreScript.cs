@@ -15,7 +15,7 @@ public class ScoreScript : MonoBehaviour
         Scoretext.text = "SCORE:" + score.ToString();
     //will count the score as the player is on the ground.
 
-        if(score.On)
+        //if(score.On)
     }
 }
 
