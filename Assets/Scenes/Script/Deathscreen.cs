@@ -8,19 +8,9 @@ using UnityEngine.UI;
 //summary
 public class Deathscreen : MonoBehaviour
 {
-    public Button[] buttons;
-
-    void Awake()
-    {
-        buttons = GetComponentsInChildren<Button>();
-
-        //HideButtons();
-    }
-    //public void HideButtons();
-    //{
-      //  foreach (var b in buttons);
+    
+       
 }
-
         
 
 
